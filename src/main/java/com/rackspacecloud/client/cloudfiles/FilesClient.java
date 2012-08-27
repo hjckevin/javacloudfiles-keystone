@@ -30,6 +30,7 @@ import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.net.URLCodec;
 import org.apache.commons.lang.text.StrTokenizer;
 import org.apache.http.Header;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
@@ -61,6 +62,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import org.json.JSONObject;
+import org.json.JSONException;
 
 import com.rackspacecloud.client.cloudfiles.wrapper.RequestEntityWrapper;
 
@@ -267,23 +270,20 @@ public class FilesClient
      */
     public boolean login() throws IOException, HttpException
     {
-        HttpGet method = new HttpGet(authenticationURL);
+    	HttpPost method = new HttpPost(authenticationURL);
         method.getParams().setIntParameter("http.socket.timeout", connectionTimeOut);
-
-        method.setHeader(FilesUtil.getProperty("auth_user_header", FilesConstants.X_STORAGE_USER_DEFAULT), 
-        		username);
-        method.setHeader(FilesUtil.getProperty("auth_pass_header", FilesConstants.X_STORAGE_PASS_DEFAULT), 
-        		password);
-
-        FilesResponse response = new FilesResponse(client.execute(method));
         
-        if (response.loginSuccess())
-        {
-            isLoggedin   = true;
-            if(usingSnet() || envSnet()){
+        StringEntity entity = new StringEntity(getJSONBody());
+        entity.setContentType("application/json");
+        method.setEntity(entity);
+
+        FilesResponse2 response = new FilesResponse2(client.execute(method));
+        
+        if (response.loginSuccess()) {
+            isLoggedin = true;
+            if(usingSnet() || envSnet()) {
             	storageURL = snetAddr + response.getStorageURL().substring(8);
-            }
-            else{
+            } else {
             	storageURL = response.getStorageURL();
             }
             cdnManagementURL = response.getCDNManagementURL();
@@ -298,7 +298,34 @@ public class FilesClient
         return this.isLoggedin;
     }
     
+    /** 
+     * To construct json string.
+     */
+    private String getJSONBody() {
+        String[] tempArr = username.split(":");
+        String userName, tenantName;
+        userName = tempArr[0];
+        tenantName = tempArr[1];
+        
+        try {
+            JSONObject passwordCredentials = new JSONObject();
+            passwordCredentials.put("username", userName);
+            passwordCredentials.put("password", password);
+            JSONObject auth = new JSONObject();
+            auth.put("passwordCredentials", passwordCredentials);
+            auth.put("tenantName", tenantName);
+            JSONObject obj = new JSONObject();
+            obj.put("auth", auth);
+            
+            return obj.toString();
+        } catch (JSONException ex) {
+            logger.error("Error when construction authentication body.");
+        }
 
+ 
+        return null;
+    }
+    
     /**
      * Log in to CloudFiles.  This method performs the authentication and sets up the client's internal state.
      * 
