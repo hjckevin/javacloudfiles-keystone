@@ -371,15 +371,16 @@ public class FilesObject
 	 * @throws IOException 
 	 * @throws FilesException 
 	 */
-	public String getCDNURL () throws FilesException, IOException, HttpException  {
-		try {
-			FilesCDNContainer c = client.getCDNContainerInfo(container);
-			return c.getCdnURL() + "/" + name;
-		}
-		catch (FilesNotFoundException fnfe) {
-			// Not enabled
-			return null;
-		}
-		
-	}
+//	public String getCDNURL () throws FilesException, IOException, HttpException  {
+//		try {
+//			FilesCDNContainer c = client.getCDNContainerInfo(container);
+//			return c.getCdnURL() + "/" + name;
+//		}
+//		catch (FilesNotFoundException fnfe) {
+//			// Not enabled
+//			return null;
+//		}
+//		
+//	}
+	
 }

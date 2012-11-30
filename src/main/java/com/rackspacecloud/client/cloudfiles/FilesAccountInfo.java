@@ -4,8 +4,7 @@
 package com.rackspacecloud.client.cloudfiles;
 
 /**
- * @author lvaughn
- *
+ *  有关账户的基本信息
  */
 public class FilesAccountInfo {
 	private long bytesUsed;
@@ -16,29 +15,30 @@ public class FilesAccountInfo {
 		containerCount = containers;
 	}
 	/**
-	 * Returns the total number of bytes used by all objects in a given account.
-	 * 
+	 * 	获取指定账户中所有文件占用的字节数。
 	 * @return the bytesUsed
 	 */
 	public long getBytesUsed() {
 		return bytesUsed;
 	}
 	/**
-	 * @param bytesUsed The number of bytes in the account
+	 * 	设定账户中的总字节数
+	 * @param bytesUsed —— 总字节数值。
 	 */
 	public void setBytesUsed(long bytesUsed) {
 		this.bytesUsed = bytesUsed;
 	}
 	/**
-	 * The number of containers in a given account.
 	 * 
-	 * @return the containerCount
+	 * 	获取指定账户中所含容器书目。
+	 * @return containerCount
 	 */
 	public int getContainerCount() {
 		return containerCount;
 	}
 	/**
-	 * @param containerCount the containerCount to set
+	 * 	设定账户中的总容器数
+	 * @param containerCount —— 总容器数值。
 	 */
 	public void setContainerCount(int containerCount) {
 		this.containerCount = containerCount;

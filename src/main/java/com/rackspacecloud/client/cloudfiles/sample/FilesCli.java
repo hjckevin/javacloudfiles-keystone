@@ -57,7 +57,7 @@ public class FilesCli {
 	}
 	
 	private boolean doLogin(final String username, final String password) throws Exception {		
-		client = new FilesClient(username, password);
+		client = new FilesClient(username, password, "http://127.0.0.132:5000/v2.0/tokens");
 		return client.login();		
 	}
 	

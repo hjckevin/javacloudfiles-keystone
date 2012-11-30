@@ -18,7 +18,7 @@ public class FilesAuth
 			{
 				System.out.println("username: "+client.getUserName());
 				System.out.println("url: "+client.getStorageURL());
-				System.out.println("token: "+client.getStorageToken());
+				System.out.println("token: "+client.getAuthToken());
 			}
 			else
 			{

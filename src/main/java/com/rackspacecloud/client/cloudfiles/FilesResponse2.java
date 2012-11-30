@@ -4,6 +4,11 @@
 
 package com.rackspacecloud.client.cloudfiles;
 
+/**
+ * 	第二代认证系统返回包解析类
+ * 
+ */
+
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;

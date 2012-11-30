@@ -1,0 +1,33 @@
+30 八月 2012 10:10:53 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 八月 2012 10:11:09 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 八月 2012 10:11:49 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 八月 2012 13:32:32 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+31 八月 2012 15:18:10 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+04 九月 2012 11:31:45 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+04 九月 2012 14:52:56 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+29 十月 2012 17:02:25 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+29 十月 2012 17:02:25 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 14:50:26 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 14:50:26 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 14:50:49 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 14:50:49 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 14:54:44 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 14:54:44 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 14:56:24 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 14:56:24 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 14:58:13 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 14:58:13 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 15:05:14 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 15:05:14 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 15:28:39 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 15:28:39 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 16:58:47 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 16:58:47 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+30 十月 2012 17:16:31 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+30 十月 2012 17:16:31 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+31 十月 2012 10:32:51 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+31 十月 2012 10:32:52 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+01 十一月 2012 10:35:28 ERROR swift.client.FilesResponse2 - Invalid content of authentication
+01 十一月 2012 11:31:01 ERROR client.cloudfiles.FilesResponse2 - Invalid content of authentication
+28 十一月 2012 16:38:51 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
+28 十一月 2012 16:38:51 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
