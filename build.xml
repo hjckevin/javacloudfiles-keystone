@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="java-cloudfiles" default="compile" basedir=".">
+<project name="java-cloudfiles-keystone" default="compile" basedir=".">
 
     <description>
                 Builds CloudFiles Java Library and example apps.
@@ -8,7 +8,7 @@
     <!-- =============================================================== -->
 	<!-- Set project properties for folder locations                     -->
     <!-- =============================================================== -->
-    <property name="project.name" value="java-cloudfiles"/>
+    <property name="project.name" value="java-cloudfiles-keystone"/>
     
     <!-- Allow overrides to the properties set here -->
     <property file="local.properties" />

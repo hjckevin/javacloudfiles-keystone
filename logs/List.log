@@ -31,3 +31,9 @@
 01 十一月 2012 11:31:01 ERROR client.cloudfiles.FilesResponse2 - Invalid content of authentication
 28 十一月 2012 16:38:51 WARN  client.cloudfiles.FilesClient$1 - Authentication error: Unable to respond to any of these challenges: {}
 28 十一月 2012 16:38:51 ERROR client.cloudfiles.FilesResponse - Invalid content of authentication
+13 十二月 2012 09:45:12 INFO  client.cloudfiles.FilesClient$1 - I/O exception (java.net.NoRouteToHostException) caught when connecting to the target host: No route to host: connect
+13 十二月 2012 09:45:12 INFO  client.cloudfiles.FilesClient$1 - Retrying connect
+13 十二月 2012 09:45:12 INFO  client.cloudfiles.FilesClient$1 - I/O exception (java.net.NoRouteToHostException) caught when connecting to the target host: No route to host: connect
+13 十二月 2012 09:45:12 INFO  client.cloudfiles.FilesClient$1 - Retrying connect
+13 十二月 2012 09:45:12 INFO  client.cloudfiles.FilesClient$1 - I/O exception (java.net.NoRouteToHostException) caught when connecting to the target host: No route to host: connect
+13 十二月 2012 09:45:12 INFO  client.cloudfiles.FilesClient$1 - Retrying connect

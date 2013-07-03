@@ -56,8 +56,9 @@ public class FilesCli {
 
 	}
 	
-	private boolean doLogin(final String username, final String password) throws Exception {		
-		client = new FilesClient(username, password, "http://127.0.0.132:5000/v2.0/tokens");
+	private boolean doLogin(final String username, final String password) throws Exception {
+		client = new FilesClient(username, password);
+//		client = new FilesClient(username, password, "http://127.0.0.132:5000/v2.0/tokens");
 		return client.login();		
 	}
 	
@@ -74,6 +75,7 @@ public class FilesCli {
 		"   delete container                  Delete the container\n" +
 		"   delete container/object           Delete the given object\n" +
 		"   help                              Print this help message\n" +
+		"	list presdosdf 					  Print Folders\n" +
      	"   exit                              Exit the program\n";
 	
 	private boolean evaluateCommand(String cmd) {
@@ -87,7 +89,7 @@ public class FilesCli {
 		return evaluateCommand(components);
 	}
 	
-	private boolean evaluateCommand(String[] components) {
+	boolean evaluateCommand(String[] components) {
 		
 		String command = components[0].toLowerCase();
 		

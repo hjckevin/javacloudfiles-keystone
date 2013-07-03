@@ -301,8 +301,8 @@ public class FilesClient {
 				storageURL = response.getStorageURL();
 			}
 			
-			if(storageURL.contains("172.31.201.115:8080"))
-				storageURL = storageURL.replaceAll("172.31.201.115", "127.0.0.146");
+//			if(storageURL.contains("172.31.201.115:8080"))
+//				storageURL = storageURL.replaceAll("172.31.201.115", "127.0.0.146");
 			
 			
 			cdnManagementURL = response.getCDNManagementURL();
